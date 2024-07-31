@@ -6,4 +6,5 @@ int main( ) {
         printf( "The number in A is greater than B. \n" ) ;
     }//eng if
     printf( "\n Hello World." ) ;
+    return 0 ;
 }//eng function
