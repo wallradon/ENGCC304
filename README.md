@@ -8,3 +8,5 @@ ENGCC304 Computer Programming
 Lab 
 ---|
 [Leb1](https://github.com/wallradon/ENGCC304/blob/main/LAB1.cpp)
+[Leb2](https://github.com/wallradon/ENGCC304/blob/main/LAB2.drawio)
+[Leb6](https://github.com/wallradon/ENGCC304/tree/main/LAB-6)
