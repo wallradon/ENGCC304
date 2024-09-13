@@ -7,3 +7,4 @@ ENGCC304 Computer Programming
 ### รายการละเอียดในแต่ละสัปดาห์
 Lab 
 --- | 
+1|[Leb1](https://github.com/wallradon/ENGCC304/blob/main/LAB1.cpp)
