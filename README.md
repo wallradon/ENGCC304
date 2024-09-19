@@ -16,7 +16,7 @@ Lab
 [Lab7](https://github.com/wallradon/ENGCC304/blob/main/lab7.cpp)
 [Lab8](MidTest)
 [Lab9](https://github.com/wallradon/ENGCC304/blob/main/Lab9.cpp)
-[Lab10](#)
+[Lab10](https://github.com/wallradon/ENGCC304/blob/main/Lab10.cpp)
 [Lab11](#)
 [Lab12](#)
 [Lab13](#)
