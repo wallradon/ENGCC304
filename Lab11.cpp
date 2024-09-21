@@ -25,7 +25,7 @@ int Armstrong( int num ) {
         num = num / 10 ; //เอามันออกไป
         printf( "selected = %d\n", selec ) ;
         printf( "Sum = %d\n", sum ) ;
-        printf( "Num = %d\ntemp : %d\n--------------------\n", num, check ) ;
+        printf( "Num = %d\ncheck : %d\n--------------------\n", num, check ) ;
     }//end while
    
     if ( check == sum ) { 
