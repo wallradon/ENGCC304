@@ -12,9 +12,10 @@ struct Student {
 void inputdata( stu student[ ], int numstudents ) ; 
 void outputdata( stu student[ ], int numstudents ) ;
 void scoreG( float score ) ;
+float average( float score[ ], int numsubjects ) ;
 
 int main() {
-    int numstudents = 3 ,sum = 0 ;
+    int numstudents = 1 ,sum = 0 ;
     stu student[ numstudents ] ;
 
     inputdata( student, numstudents ) ; 
@@ -75,6 +76,19 @@ void outputdata( stu student[ ], int numstudents ){
         for ( int g = 0 ; g < 5 ; g++ ) {
             scoreG( student[i].Score[g] ) ;
         }//end for
+           
+        float avg = average(student[i].Score, 5 );
+        printf( "\nAverage: %12.2f\n", avg );
+
     }//end for
 
+}//end function
+
+float average( float score[ ], int numsubjects ) {
+    float sum = 0 ;
+    for ( int i = 0 ; i < numsubjects; i++ ) {
+        sum += score[ i ];
+        printf( "\tsc = %f", score[ i ] ) ;
+    }
+    return sum / numsubjects ;
 }//end function
