@@ -30,31 +30,22 @@
         Employees ID = 0000500349
         Salary = U$ 374000.00
 */
-
-
 #include <stdio.h>
 
 int main() {
-
-    char key_em[10] ; 
-    int workhours = 0, income_hours = 0, salary = 0 ;
-
-    printf( "please enter Employees ID : " ) ;
+    char key_em[11] ; 
+    float workhours = 0, income_hours = 0, salary = 0 ;
+    /*รับค่า*/
+    printf( "Input the Employees ID (Max. 10 chars): " ) ;
     scanf( "%s", key_em ) ;
-    printf( "Please enter the working / Hours : " ) ;
-    scanf( "%d", &workhours ) ;
-    printf( "Please enter Salary amount/hr : " ) ;
-    scanf( "%d",&income_hours ) ;
-    printf( "\n" ) ;
-
-    salary = workhours * income_hours * 30 ;
-
-    printf( "-------------------------------------------------------------------------------------------\n" ) ;
+    key_em[11] = '\0' ;
+    printf( "Input the working hrs: " ) ;
+    scanf( "%f", &workhours ) ;
+    printf( "Salary amount/hr: " ) ;
+    scanf( "%f", &income_hours ) ;
+    salary = workhours * income_hours ;
+    /*แสดงผล*/
     printf( "Employees ID = %s \n", key_em) ;
-    printf( "Salary = %d Baht", salary ) ;    
-
-    //--| YOUR CODE HERE
-
+    printf( "Salary = U$ %.2f", salary ) ;    
     return 0 ;
-
 }//end main function
