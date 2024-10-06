@@ -1,24 +1,20 @@
 #include <stdio.h>
-
 int main() {
     int indexar = 0, prime = 0 ;
-    
     printf( "Enter N : " ) ;
     scanf( "%d", &indexar ) ;
     int PrimeNum[ indexar ] ;
-    
+
     for ( int i = 0 ; i < indexar ; i++ ){ 
         printf( "Enter value[%d] : ", i ) ; 
         scanf( "%d", &PrimeNum[i] ) ;
-    }
+    }//end for
 
-    // แสดงดัชนีในบรรทัดเดียว
     printf( "Index:  " );
     for ( int i = 0 ; i < indexar ; i++ ) {
         printf( " %d ", i ); 
-    }
+    }//end for
 
-    // แสดงค่าในอาร์เรย์และตรวจสอบจำนวนเฉพาะ
     printf( "\nArray: " );
     for ( int i = 0 ; i < indexar ; i++ ){  
         prime = 1 ;
@@ -27,19 +23,21 @@ int main() {
                 if ( PrimeNum[i] % k == 0 ) {
                     prime = 0 ;
                     break; 
-                }
-            }
+                }//end if
+            }//end for
         } else {
             prime = 0;
-        }
+        }//end if
 
-        // แสดงจำนวนเฉพาะหรือ #
-        if ( prime == 1 ){
-            printf( " %d  ", PrimeNum[ i ] ) ; 
-        } else {
-            printf( " # " ) ; 
-        }
+        if ( PrimeNum[i] == 23 )
+        {
+            printf( "%d", PrimeNum[ i ] ) ; 
+        }else if (prime == 1)
+        {
+            printf( " %d", PrimeNum[ i ] ) ; 
+        }else {
+            printf( "  # " ) ; 
+        }//end if     
     }
-
     return 0 ;
-}
+}//end function
