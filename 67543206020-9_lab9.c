@@ -3,7 +3,7 @@
 int main() {
     int indexar = 0, prime = 0 ;
     
-    printf( " Enter N : " ) ;
+    printf( "Enter N : " ) ;
     scanf( "%d", &indexar ) ;
     int PrimeNum[ indexar ] ;
     
@@ -12,11 +12,14 @@ int main() {
         scanf( "%d", &PrimeNum[i] ) ;
     }
 
-    printf( "Index:" );
+    // แสดงดัชนีในบรรทัดเดียว
+    printf( "Index:  " );
     for ( int i = 0 ; i < indexar ; i++ ) {
-        printf( " %d", i ); 
+        printf( " %d ", i ); 
     }
-    printf( "\n Array:" );
+
+    // แสดงค่าในอาร์เรย์และตรวจสอบจำนวนเฉพาะ
+    printf( "\nArray: " );
     for ( int i = 0 ; i < indexar ; i++ ){  
         prime = 1 ;
         if ( PrimeNum[i] > 1 ){ 
@@ -29,11 +32,14 @@ int main() {
         } else {
             prime = 0;
         }
+
+        // แสดงจำนวนเฉพาะหรือ #
         if ( prime == 1 ){
-            printf( " %3d", PrimeNum[ i ] ) ; 
+            printf( " %d  ", PrimeNum[ i ] ) ; 
         } else {
-            printf( " %3s", "#" ) ; 
+            printf( " # " ) ; 
         }
     }
+
     return 0 ;
-}//end main function
+}
